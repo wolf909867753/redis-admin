@@ -16,7 +16,7 @@
 
 #### 安装教程
 
-1. 创建名为x-redis-admin数据库
+1. 创建名为redis-admin数据库
 2. 在创建好的数据库中执行 sql/db.sql 脚本文件来初始化基础数据
 3. 修改application-dev.yml中的数据库名称、用户名和密码, 以及修改redis配置
 4. 运行App.java中的main方法启动系统
