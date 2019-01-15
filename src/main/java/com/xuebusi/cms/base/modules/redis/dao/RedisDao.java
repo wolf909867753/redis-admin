@@ -12,6 +12,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.CollectionUtils;
+import redis.clients.jedis.JedisCluster;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -26,6 +27,9 @@ public class RedisDao {
     @Autowired
     @Qualifier("redisTemplate")
     private RedisTemplate template;
+
+    @Autowired
+    private JedisCluster jedisCluster;
 
     @Autowired
     @Qualifier("stringRedisTemplate")
